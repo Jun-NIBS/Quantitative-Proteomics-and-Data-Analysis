@@ -578,7 +578,7 @@ plot2D(hyperLOPIT2015,
 
 # Statistical analyses
 
-## Radom data
+## Random data
 
 ```{r random, fig.width=12}
 set.seed(1)

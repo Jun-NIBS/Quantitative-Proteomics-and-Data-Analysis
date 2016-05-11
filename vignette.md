@@ -7,7 +7,7 @@ output:
      toc_depth: 1
 ---
 
-Last update: Tue Apr  5 19:31:04 2016
+Last update: Wed May 11 20:00:24 2016
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
@@ -507,6 +507,15 @@ the left, we have a heatmap like visualisation of a MS map and a 3
 dimensional representation of the same data. On the right, 2 MS1
 spectra in blue and the set of interleaves 10 MS2 spectra.
 
+
+```
+## 1
+```
+
+```
+## 1
+```
+
 ![plot of chunk msmap1](figure/msmap1-1.png)
 
 Below, we have animations build from extracting successive slices as above.
@@ -539,11 +548,6 @@ peptide and matching observed peaks to fragments:
 
 ```r
 calculateFragments("SIGFEGDSIGR")
-```
-
-```
-## The mass listed in "modifications" is now added to the amino acid/peptide.
-## In MSnbase < 1.17.6 the mass was replaced. Please see '?calculateFragments' for details.
 ```
 
 ```
@@ -908,7 +912,7 @@ plot2D(hyperLOPIT2015,
 
 # Statistical analyses
 
-## Radom data
+## Random data
 
 
 ```r
@@ -1083,71 +1087,72 @@ Software used:
 ## [8] datasets  base     
 ## 
 ## other attached packages:
-##  [1] qvalue_2.3.2         genefilter_1.53.3    gplots_3.0.0        
-##  [4] gridExtra_2.2.1      lattice_0.20-33      AnnotationHub_2.3.16
-##  [7] msmsTests_1.9.0      msmsEDA_1.9.0        pRolocdata_1.9.5    
-## [10] pRoloc_1.11.19       MLInterfaces_1.51.3  cluster_2.0.3       
-## [13] annotate_1.49.1      XML_3.98-1.4         AnnotationDbi_1.33.7
-## [16] IRanges_2.5.40       S4Vectors_0.9.44     RforProteomics_1.9.4
-## [19] rpx_1.7.2            MSnbase_1.19.19      ProtGenerics_1.3.3  
-## [22] BiocParallel_1.5.21  mzR_2.5.5            Rcpp_0.12.4         
-## [25] Biobase_2.31.3       BiocGenerics_0.17.3  BiocStyle_1.9.8     
+##  [1] qvalue_2.4.0          genefilter_1.54.0     gplots_3.0.1         
+##  [4] gridExtra_2.2.1       lattice_0.20-33       AnnotationHub_2.4.0  
+##  [7] msmsTests_1.10.0      msmsEDA_1.10.0        pRolocdata_1.10.0    
+## [10] pRoloc_1.12.0         MLInterfaces_1.52.0   cluster_2.0.4        
+## [13] annotate_1.50.0       XML_3.98-1.4          AnnotationDbi_1.34.0 
+## [16] IRanges_2.6.0         S4Vectors_0.10.0      RforProteomics_1.10.0
+## [19] rpx_1.8.0             MSnbase_1.21.4        ProtGenerics_1.4.0   
+## [22] BiocParallel_1.6.0    mzR_2.6.0             Rcpp_0.12.4.5        
+## [25] Biobase_2.32.0        BiocGenerics_0.18.0   BiocStyle_2.0.0      
 ## 
 ## loaded via a namespace (and not attached):
-##   [1] plyr_1.8.3                   GSEABase_1.33.0             
-##   [3] splines_3.3.0                ggvis_0.4.2                 
-##   [5] ggplot2_2.1.0                digest_0.6.9                
-##   [7] foreach_1.4.3                BiocInstaller_1.21.4        
-##   [9] htmltools_0.3.5              gdata_2.17.0                
-##  [11] magrittr_1.5                 doParallel_1.0.10           
-##  [13] sfsmisc_1.1-0                limma_3.27.14               
-##  [15] rda_1.0.2-2                  R.utils_2.2.0               
-##  [17] lpSolve_5.6.13               colorspace_1.2-6            
-##  [19] dplyr_0.4.3                  RCurl_1.95-4.8              
-##  [21] graph_1.49.1                 lme4_1.1-11                 
-##  [23] impute_1.45.0                survival_2.38-3             
-##  [25] iterators_1.0.8              gtable_0.2.0                
-##  [27] zlibbioc_1.17.1              MatrixModels_0.4-1          
-##  [29] car_2.1-2                    kernlab_0.9-23              
-##  [31] prabclus_2.2-6               DEoptimR_1.0-4              
-##  [33] SparseM_1.7                  scales_0.4.0                
-##  [35] vsn_3.39.2                   mvtnorm_1.0-5               
-##  [37] DBI_0.3.1                    edgeR_3.13.5                
-##  [39] xtable_1.8-2                 proxy_0.4-15                
-##  [41] mclust_5.1                   preprocessCore_1.33.0       
-##  [43] htmlwidgets_0.6              sampling_2.7                
-##  [45] httr_1.1.0                   threejs_0.2.1               
-##  [47] FNN_1.1                      RColorBrewer_1.1-2          
-##  [49] fpc_2.1-10                   modeltools_0.2-21           
-##  [51] R.methodsS3_1.7.1            flexmix_2.3-13              
-##  [53] nnet_7.3-12                  RJSONIO_1.3-0               
-##  [55] caret_6.0-64                 labeling_0.3                
-##  [57] reshape2_1.4.1               munsell_0.4.3               
-##  [59] mlbench_2.1-1                biocViews_1.39.8            
-##  [61] tools_3.3.0                  RSQLite_1.0.0               
-##  [63] pls_2.5-0                    evaluate_0.8.3              
-##  [65] stringr_1.0.0                mzID_1.9.0                  
-##  [67] knitr_1.12.3                 robustbase_0.92-5           
-##  [69] rgl_0.95.1441                caTools_1.17.1              
-##  [71] randomForest_4.6-12          RBGL_1.47.0                 
-##  [73] nlme_3.1-126                 mime_0.4                    
-##  [75] quantreg_5.21                formatR_1.3                 
-##  [77] R.oo_1.20.0                  biomaRt_2.27.2              
-##  [79] pbkrtest_0.4-6               curl_0.9.6                  
-##  [81] interactiveDisplayBase_1.9.0 e1071_1.6-7                 
-##  [83] affyio_1.41.0                stringi_1.0-1               
-##  [85] trimcluster_0.1-2            Matrix_1.2-4                
-##  [87] nloptr_1.0.4                 gbm_2.1.1                   
-##  [89] RUnit_0.4.31                 MALDIquant_1.14             
-##  [91] bitops_1.0-6                 httpuv_1.3.3                
-##  [93] R6_2.1.2                     pcaMethods_1.63.0           
-##  [95] affy_1.49.0                  hwriter_1.3.2               
-##  [97] KernSmooth_2.23-15           gridSVG_1.5-0               
-##  [99] codetools_0.2-14             MASS_7.3-45                 
-## [101] gtools_3.5.0                 assertthat_0.1              
-## [103] interactiveDisplay_1.9.0     Category_2.37.1             
-## [105] diptest_0.75-7               mgcv_1.8-12                 
-## [107] grid_3.3.0                   rpart_4.1-10                
-## [109] class_7.3-14                 minqa_1.2.4                 
-## [111] shiny_0.13.2                 base64enc_0.1-3
+##   [1] plyr_1.8.3                    GSEABase_1.34.0              
+##   [3] splines_3.3.0                 ggvis_0.4.2                  
+##   [5] ggplot2_2.1.0                 digest_0.6.9                 
+##   [7] foreach_1.4.3                 BiocInstaller_1.22.1         
+##   [9] htmltools_0.3.5               gdata_2.17.0                 
+##  [11] magrittr_1.5                  doParallel_1.0.10            
+##  [13] sfsmisc_1.1-0                 limma_3.28.2                 
+##  [15] rda_1.0.2-2                   R.utils_2.3.0                
+##  [17] lpSolve_5.6.13                colorspace_1.2-6             
+##  [19] dplyr_0.4.3                   RCurl_1.95-4.8               
+##  [21] jsonlite_0.9.19               graph_1.50.0                 
+##  [23] lme4_1.1-12                   impute_1.46.0                
+##  [25] survival_2.39-3               iterators_1.0.8              
+##  [27] gtable_0.2.0                  zlibbioc_1.18.0              
+##  [29] MatrixModels_0.4-1            car_2.1-2                    
+##  [31] kernlab_0.9-24                prabclus_2.2-6               
+##  [33] DEoptimR_1.0-4                SparseM_1.7                  
+##  [35] scales_0.4.0                  vsn_3.40.0                   
+##  [37] mvtnorm_1.0-5                 DBI_0.4-1                    
+##  [39] edgeR_3.14.0                  xtable_1.8-2                 
+##  [41] proxy_0.4-15                  mclust_5.2                   
+##  [43] preprocessCore_1.34.0         htmlwidgets_0.6              
+##  [45] sampling_2.7                  httr_1.1.0                   
+##  [47] threejs_0.2.2                 FNN_1.1                      
+##  [49] RColorBrewer_1.1-2            fpc_2.1-10                   
+##  [51] modeltools_0.2-21             R.methodsS3_1.7.1            
+##  [53] flexmix_2.3-13                nnet_7.3-12                  
+##  [55] RJSONIO_1.3-0                 caret_6.0-68                 
+##  [57] labeling_0.3                  reshape2_1.4.1               
+##  [59] munsell_0.4.3                 mlbench_2.1-1                
+##  [61] biocViews_1.40.0              tools_3.3.0                  
+##  [63] RSQLite_1.0.0                 pls_2.5-0                    
+##  [65] evaluate_0.9                  stringr_1.0.0                
+##  [67] mzID_1.10.0                   knitr_1.13                   
+##  [69] robustbase_0.92-5             rgl_0.95.1441                
+##  [71] caTools_1.17.1                randomForest_4.6-12          
+##  [73] RBGL_1.48.0                   nlme_3.1-127                 
+##  [75] mime_0.4                      quantreg_5.21                
+##  [77] formatR_1.4                   R.oo_1.20.0                  
+##  [79] biomaRt_2.28.0                pbkrtest_0.4-6               
+##  [81] curl_0.9.7                    interactiveDisplayBase_1.10.0
+##  [83] e1071_1.6-7                   affyio_1.42.0                
+##  [85] stringi_1.0-1                 trimcluster_0.1-2            
+##  [87] Matrix_1.2-6                  nloptr_1.0.4                 
+##  [89] gbm_2.1.1                     RUnit_0.4.31                 
+##  [91] MALDIquant_1.14               bitops_1.0-6                 
+##  [93] httpuv_1.3.3                  R6_2.1.2                     
+##  [95] pcaMethods_1.64.0             affy_1.50.0                  
+##  [97] hwriter_1.3.2                 KernSmooth_2.23-15           
+##  [99] gridSVG_1.5-0                 codetools_0.2-14             
+## [101] MASS_7.3-45                   gtools_3.5.0                 
+## [103] assertthat_0.1                interactiveDisplay_1.10.0    
+## [105] Category_2.38.0               diptest_0.75-7               
+## [107] mgcv_1.8-12                   grid_3.3.0                   
+## [109] rpart_4.1-10                  class_7.3-14                 
+## [111] minqa_1.2.4                   shiny_0.13.2                 
+## [113] base64enc_0.1-3
 ```
